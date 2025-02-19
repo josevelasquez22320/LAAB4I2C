@@ -2,7 +2,7 @@
  * I2C.c
  *
  * Created: 12/02/2025 17:55:53
- *  Author: Guillermo José Schwartz López
+ *  Author: josea
  */ 
 
 #include "I2C.h"
@@ -45,17 +45,17 @@ void I2C_Master_Init(unsigned long SCL_CLOCK, uint8_t Prescaler){
 }
 
 //******************************************************************************************************************
-//FUNCION PARA EL INICIO DE LA COMUNICACIÓN I2C
+//FUNCION PARA EL INICIO DE LA COMUNICACIÃ“N I2C
 //******************************************************************************************************************
 
 void I2C_Master_Start(void){
 	uint8_t estado;
-	TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);		//Se configura la condición de Start
+	TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);		//Se configura la condiciÃ³n de Start
 	while(!(TWCR & (1<<TWINT)));		//Espera a que termine la bandera TWINT
 }
 
 //******************************************************************************************************************
-//FUNCION PARA LA PARADA DE LA COMUNICACIÓN I2C
+//FUNCION PARA LA PARADA DE LA COMUNICACIÃ“N I2C
 //******************************************************************************************************************
 
 void I2C_Master_Stop(void){
