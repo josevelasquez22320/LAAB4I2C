@@ -2,7 +2,7 @@
  * ADC.h
  *
  * Created: 2/13/2025 7:14:45 PM
- *  Author: gaadd
+ *  Author: JOSEA
  */ 
 
 
@@ -11,9 +11,9 @@
 
 #include <avr/io.h>
 
-void ADC_init(void);					//Prototipo de función para configruar el ADC
+void ADC_init(void);					//Prototipo de funciÃ³n para configruar el ADC
 
-uint16_t ADC_read(uint8_t canal);		//Prototipo de función para leer los canales del ADC
+uint16_t ADC_read(uint8_t canal);		//Prototipo de funciÃ³n para leer los canales del ADC
 
 
 
