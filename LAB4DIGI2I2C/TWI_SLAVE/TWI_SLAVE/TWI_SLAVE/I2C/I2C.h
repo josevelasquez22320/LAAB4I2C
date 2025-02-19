@@ -2,7 +2,7 @@
  * I2C.h
  *
  * Created: 12/02/2025 17:55:39
- *  Author: Guillermo José Schwartz López
+ *  Author: josea
  */ 
 
 
@@ -21,13 +21,13 @@
 //FUNCIONES PARA CONFIGURAR EL MAESTRO
 //******************************************************************************************************************
 
-//Función para inicializar I2C Maestro
+//FunciÃ³n para inicializar I2C Maestro
 void I2C_Master_Init(unsigned long SCL_CLOCK, uint8_t Prescaler);
 
-//Función para el inicio de la comunicación I2C
+//FunciÃ³n para el inicio de la comunicaciÃ³n I2C
 void I2C_Master_Start(void);
 
-//Función para la parada de la comunicación I2C
+//FunciÃ³n para la parada de la comunicaciÃ³n I2C
 void I2C_Master_Stop(void);
 
 //Funcion de transmision de datos del maestro al esclavo
